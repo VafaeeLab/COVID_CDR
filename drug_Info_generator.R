@@ -73,9 +73,15 @@ all.cv_full = dplyr::left_join(all.cv_full, functional.relevance.drugs, by=c("Dr
 functional.proximity.drugs = fread("data/Functional_proximity_score_v5.csv", header = F, skip = 1) %>% dplyr::select(-1) %>%
   dplyr::rename(DrugID = V2, Functional_Proximity = V3) %>% 
   as.data.frame()
-functional.proximity.drugs$Functional_Proximity = functional.proximity.drugs$Functional_Proximity / max(functional.proximity.drugs$Functional_Proximity, na.rm = T)
+p <- pnorm(scale(functional.proximity.drugs$Functional_Proximity),lower.tail = F)
+# p.adj <- p.adjust(p, method = "fdr")
+functional.proximity.drugs$z_FP = scale(functional.proximity.drugs$Functional_Proximity)
+functional.proximity.drugs$z_FP_pVal = p
+# functional.proximity.drugs$z_FP_p.Adj = p.adj
 
-  all.cv_full = dplyr::left_join(all.cv_full, functional.proximity.drugs, by=c("DrugBankID" = "DrugID"))
+# functional.proximity.drugs$Functional_Proximity = functional.proximity.drugs$Functional_Proximity / max(functional.proximity.drugs$Functional_Proximity, na.rm = T)
+
+all.cv_full = dplyr::left_join(all.cv_full, functional.proximity.drugs, by=c("DrugBankID" = "DrugID"))
 
 # may still contain duplicated drugnames with different DrugbankIDs, 
 # find them using >all.cv[which(duplicated(all.cv$Name)),], and manually find unique ones using DrugBank website
