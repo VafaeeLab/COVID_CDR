@@ -16,11 +16,11 @@ show_COV_drug_target_Network <- function(drugs, hasSARS_CoV = T, hasInfz = T, ho
   all.cv_full <- fread("AppData/allCOVID_drug_collection_full_v5.csv", encoding = "UTF-8") %>% as.data.frame()
   
   
-  human.ppi <- fread("AppData/i2d.human.anno.ppi.Genes.csv") %>% as.data.frame() # can look for only the signaling net
+  human.ppi <- fread("AppData/i2d.human.anno.ppi.Genes.csv", encoding = "UTF-8") %>% as.data.frame() # can look for only the signaling net
   ppiNet <- graph_from_data_frame(human.ppi[,c("symbol1", "symbol2")], directed = F) %>% igraph::simplify()
   
   # add side-effect
-  ddi = fread("AppData/13397 DDI from Drugbank.txt") %>% as.data.frame()
+  ddi = fread("AppData/13397 DDI from Drugbank.txt", encoding = "UTF-8") %>% as.data.frame()
   # ddi.simInfo1 = dplyr::inner_join(ddi, FDA_aprv, by = c("ID1" = "ID1", "ID2" = "ID2"))
   # ddi.simInfo2 = dplyr::inner_join(ddi, FDA_aprv, by = c("ID2" = "ID1", "ID1" = "ID2"))
   # ddi.simInfo = dplyr::bind_rows(ddi.simInfo1, ddi.simInfo2)
@@ -30,7 +30,7 @@ show_COV_drug_target_Network <- function(drugs, hasSARS_CoV = T, hasInfz = T, ho
   
   
   # load COVID-19-Human PPIs
-  cov2_human.ppi <- fread("AppData/SARS_COV2_Human_PPI_27Oct_2020.csv") %>% as.data.frame() 
+  cov2_human.ppi <- fread("AppData/SARS_COV2_Human_PPI_27Oct_2020.csv", encoding = "UTF-8") %>% as.data.frame() 
   colnames(cov2_human.ppi) <- c("COV","Human")
   cov2_human.ppi.net <- graph_from_data_frame(cov2_human.ppi, directed = F) %>% igraph::simplify()
   
@@ -39,7 +39,7 @@ show_COV_drug_target_Network <- function(drugs, hasSARS_CoV = T, hasInfz = T, ho
   
   
   # filename=
-  drug.targets.all <- fread("AppData/all_compiled.csv") %>% as.data.frame() 
+  drug.targets.all <- fread("AppData/all_compiled.csv", encoding = "UTF-8") %>% as.data.frame() 
   drug.targets <- drug.targets.all %>% dplyr::select(c(3, 12, 13))
   
   # a pair:
@@ -58,12 +58,12 @@ show_COV_drug_target_Network <- function(drugs, hasSARS_CoV = T, hasInfz = T, ho
     dplyr::select(c("DrugBankID","z_DP", "z_DP_pVal")) %>% 
     dplyr::rename("DrugID" = "DrugBankID", "z_score" = "z_DP", "p_value" = "z_DP_pVal")
   
-  dd.prox.score = disease.proximity.drugs[base::match(drugs, disease.proximity.drugs$DrugID),"z_score"] %>% round(digits = 2)
+  dd.prox.score = disease.proximity.drugs[base::match(drugs, disease.proximity.drugs$DrugID),c("z_score","p_value")] 
   
   functional.proximity.drugs = all.cv_full %>% 
     dplyr::select(c("DrugBankID","Functional_Proximity"))
   
-  fp.score = functional.proximity.drugs[base::match(drugs, functional.proximity.drugs$DrugBankID),"Functional_Proximity"] %>% round(digits = 2)
+  fp.score = functional.proximity.drugs[base::match(drugs, functional.proximity.drugs$DrugBankID), c("z_FP","z_FP_pVal")] 
   
   
   
@@ -76,8 +76,12 @@ show_COV_drug_target_Network <- function(drugs, hasSARS_CoV = T, hasInfz = T, ho
     title = paste0("<p>Name: <b>", drugNames, "</b></p>", 
                    "<p>Class: <b>", drugClass, "</b></p>", 
                    "<p>Indications: <b>", drugIndication, "</b></p>",
-                   "<p>Functional Proximity: <b>", fp.score, "</b></p>",
-                   "<p>COVID-19 Proximity: <b>", dd.prox.score, "</b></p>"),
+                   "<p>COVID-19 Proximity (functional): <b>", fp.score[1] %>% 
+                     round(digits = 2), "(" , fp.score[2] %>% 
+                     round(digits = 2), ")",  "</b></p>"),
+                    "<p>COVID-19 Proximity (topological): <b>", dd.prox.score[1] %>% 
+                     round(digits = 2), "(" , dd.prox.score[2] %>% 
+                     round(digits = 2), ")",  "</b></p>",
     stringsAsFactors = F)
   # nodes = data.frame(
   #   id=c(d1,d2),
