@@ -1,9 +1,9 @@
 # COVID_CDR
-COVID-19 drug combination and their network-based Mechanism-of-Action (MOA) explorer
+**COVID-19 drug combination and their network-based Mechanism-of-Action (MOA) explorer**
 
 ## Usage
-- Data availability: [```data```](https://github.com/VafaeeLab/COVID_CDR/tree/main/data) directory
-- Code availability: [```script```](https://github.com/VafaeeLab/COVID_CDR/tree/main/scripts) directory 
+- Data availability: [```data directory```](https://github.com/VafaeeLab/COVID_CDR/tree/main/data)
+- Code availability: [```script directory```](https://github.com/VafaeeLab/COVID_CDR/tree/main/scripts)
 
 ## Introduction
 <p>The war against COVID-19 is far from over. Many Countries if immune to the first wave of COVID-19 impact are now facing the second, but stronger wave of these infections and much higher death rates. As per projected data there will be 300 million infections and more than 2 million deaths caused by COVID-19 globally by the end of March 2021. Although considerable scientific attention has been focused on identifying a cure for covid19 there has been a limited progress, few drugs are showing some promise in clinical trials, while others are raising controversy. </p>
