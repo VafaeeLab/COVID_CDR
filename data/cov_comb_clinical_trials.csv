@@ -1,0 +1,45 @@
+DrugNames,DrugIDs,Trial ref,Trial ref link
+Remdesivir + Interferon beta-1a,DB14761 + DB00060,NCT04492475,https://clinicaltrials.gov/ct2/show/NCT04492475
+Hydroxychloroquine + Dexamethasone,DB01611 + DB01234,NCT04347980,https://clinicaltrials.gov/ct2/show/NCT04347980
+Atazanavir + Dexamethasone,DB01072 + DB01234,NCT04452565,https://clinicaltrials.gov/ct2/show/NCT04452565
+Favipiravir + Baloxavir,DB12466 + DB13997,ChiCTR2000029544,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029544
+Ribavarin + Interferon alfa,DB00811 + DB05258,ChiCTR2000029387,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029387
+Methylprednisolone  + Remedesvir,DB00959 + DB14761,ChiCTR2000029387,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029387
+Hydroxychloroquine + Azithromycin,DB01611 + DB00207,NCT04322123,https://www.clinicaltrials.gov/ct2/show/NCT04322123
+Hydroxychloroquine + Favipiravir,DB01611 + DB12466,IRCT20200428047228N1,https://covid-19.cochrane.org/studies/crs-13782032
+Hydroxychloroquine + Umifenovir ,DB01611 + DB13609,IRCT20200325046859N2,https://en.irct.ir/trial/47200
+Interferon alfa + Favipiravir,DB05258 + DB12466,ChiCTR2000030987,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000030987
+Recombinant human interferon alpha-1b + Thymalfasin,DB00069 + DB04900,NCT04320238,https://www.clinicaltrials.gov/ct2/show/NCT04320238
+Interferon Kappa + Trefoil peptide TFF2,DB15749 + DB15750,ChiCTR2000035633,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000035633
+Baloxavir + Marboxil,DB15675 + DB13997,NCT02954354,https://www.clinicaltrials.gov/ct2/show/NCT02954354
+TMC-310911 + Ritonavir,DB15623 + DB00503,NCT04261907,https://www.clinicaltrials.gov/ct2/show/NCT04261907
+Darunavir + Cobicistat,DB01264 + DB09065,NCT04252274,https://www.clinicaltrials.gov/ct2/show/NCT04252274
+Ritonavir + Lopinavir,DB00503 + DB01601,ChiCTR2000029308,http://www.chictr.org.cn/showprojen.aspx?proj=48684
+TMC-310911 + Oseltamivir,DB15623 + DB00198,NCT04261270,https://www.clinicaltrials.gov/ct2/show/NCT04261270
+Remdesivir + Sarilumab,DB14761 + DB11767,NCT04386239,https://www.clinicaltrials.gov/ct2/show/NCT04386239
+Favipiravir + Lopinavir,DB12466 + DB01601,EUCTR2020-002106-68-GB,https://www.clinicaltrialsregister.eu/ctr-search/search?query=EUCTR2020-002106-68-GB
+Favipiravir + Methylprednisolone,DB12466 + DB00959,JPRN-jRCTs041200025,https://rctportal.niph.go.jp/en/detail?trial_id=jRCTs041200025
+Favipiravir + Tocilizumab,DB12466 + DB06273,ChiCTR2000030894,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000030894
+Favipiravir + Ritonavir,DB12466 + DB00503,ChiCTR2000030113,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000030113
+Tocilizumab + Methylprednisolone,DB06273 + DB00959,PMID:32696008,https://pubmed.ncbi.nlm.nih.gov/32696008/
+Vidofludimus + Oseltamivir,DB15446 + DB00198,EUCTR2020-001805-21-GB,https://www.clinicaltrialsregister.eu/ctr-search/search?query=EUCTR2020-001805-21-GB
+Ebastine + Interferon alfa + Lopinavir,DB11742 + DB05258 + DB01601,ChiCTR2000030535,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000030535
+Lopinavir + Ritonavir + Interferon beta-1a + Hydroxychloroquine,DB01601 + DB00503 + DB00060 + DB01611,NCT04350671,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04350671
+Darunavir + Ritonavir + Oseltamivir + Hydroxychloroquine,DB01264 + DB00503 + DB00198 + DB01611,NCT04303299,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04303299
+Lopinavir + Ritonavir + Oseltamivir + Hydroxychloroquine,DB01601 + DB00503 + DB00198 + DB01611,NCT04303299,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04303299
+Lopinavir + Ritonavir + Favipiravir + Hydroxychloroquine,DB01601 + DB00503 + DB12466 + DB01611,NCT04303299,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04303299
+Darunavir + Ritonavir + Oseltamivir + Hydroxychloroquine,DB01264 + DB00503 + DB00198 + DB01611,NCT04303299,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04303299
+Lopinavir + Ritonavir + Favipiravir,DB01601 + DB00503 + DB12466,IRCT20200506047323N3,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=IRCT20200506047323N3
+Danoprevir + Ritonavir + Interferon alfa-2b,DB11779 + DB00503 + DB00105,NCT04291729,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04291729
+Hydroxychloroquine + Darunavir + Ritonavir,DB01611 + DB01264 + DB00503,NCT04435587,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04435587
+Ribavirin + Lopinavir + Ritonavir + Interferon beta-1b,DB00812 + DB01601 + DB00503 + DB00068,NCT04276688,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04276688
+Hydroxychloroquine + Darunavir + Cobicistat,DB01611 + DB01264 + DB09065,PMID:32277836,https://pubmed.ncbi.nlm.nih.gov/32277836/
+Darunavir + Cobicistat + Thymalfasin,DB01264 + DB09065 + DB04900,PMID:32233067,https://pubmed.ncbi.nlm.nih.gov/32233067/
+Emtricitabine + Tenofovir alafenamide + Lopinavir,DB00879 + DB09299 + DB01601,ChiCTR2000029468,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029468
+Interferon alfa + Lopinavir + Ritonavir,DB05258 + DB01601 + DB00503,ChiCTR2000029387,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029387
+Interferon alfa + Ribavirin + Lopinavir/Ritonavir,DB05258 + DB00811 + DB01601,ChiCTR2000029387,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029387
+Interferon beta-1b + Ribavirin + Lopinavir,DB00068 + DB00811 + DB01601,NCT04276688,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04276688
+Interferon alfa + Lopinavir + Ritonavir,DB05258 + DB01601 + DB00503,ChiCTR2000029387,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=ChiCTR2000029387
+Hydroxychloroquine + Ritonavir + Lopinavir,DB01611 + DB00503 + DB01601,jRCTs031190227,https://rctportal.niph.go.jp/en/detail?trial_id=jRCTs031190227
+Hydroxychloroquine + Oseltamivir + Azithromycin,DB01611 + DB00198 + DB00207,NCT04338698,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04338698
+Umifenovir + Interferon beta-1a + Hydroxychloroquine + Lopinavir/Ritonavir,DB13609 + DB00060 + DB01611 + DB01601,NCT04350684,https://apps.who.int/trialsearch/Trial2.aspx?TrialID=NCT04350684
