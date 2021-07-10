@@ -18,5 +18,12 @@ If you find COVID-CDR as useful for your research, please cite our work by inclu
 - <b>An Integrative Resource for Network-Based Investigation of COVID-19 Combinatorial Drug Repositioning and Mechanism of Action.</b> <i>ChemRxiv</i> [```Link to the paper```](https://chemrxiv.org/engage/chemrxiv/article-details/60c7523ff96a00638428817e)
 - Citation:
 ```
-@article{azad_fatima_vafaee_2020, place={Cambridge}, title={An Integrative Resource for Network-Based Investigation of COVID-19 Combinatorial Drug Repositioning and Mechanism of Action}, DOI={10.26434/chemrxiv.13271096.v1}, journal={ChemRxiv}, publisher={Cambridge Open Engage}, author={Azad, AKM and Fatima, Shadma and Vafaee, Fatemeh}, year={2020}}
+@article{azad_fatima_vafaee_2020, 
+  place={Cambridge}, 
+  title={An Integrative Resource for Network-Based Investigation of COVID-19 Combinatorial Drug Repositioning and Mechanism of Action}, 
+  DOI={10.26434/chemrxiv.13271096.v1}, 
+  journal={ChemRxiv}, 
+  publisher={Cambridge Open Engage}, 
+  author={Azad, AKM and Fatima, Shadma and Vafaee, Fatemeh}, year={2020}
+}
 ```
