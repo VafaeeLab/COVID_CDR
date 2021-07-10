@@ -2,8 +2,8 @@
 COVID-19 drug combination and their network-based Mechanism-of-Action (MOA) explorer
 
 ## Usage
-- Data availability: (data)[https://github.com/VafaeeLab/COVID_CDR/tree/main/data] directory
-- Code availability: (script)[https://github.com/VafaeeLab/COVID_CDR/tree/main/scripts] directory 
+- Data availability: [```data```](https://github.com/VafaeeLab/COVID_CDR/tree/main/data) directory
+- Code availability: [```script```](https://github.com/VafaeeLab/COVID_CDR/tree/main/scripts) directory 
 
 ## Introduction
 <p>The war against COVID-19 is far from over. Many Countries if immune to the first wave of COVID-19 impact are now facing the second, but stronger wave of these infections and much higher death rates. As per projected data there will be 300 million infections and more than 2 million deaths caused by COVID-19 globally by the end of March 2021. Although considerable scientific attention has been focused on identifying a cure for covid19 there has been a limited progress, few drugs are showing some promise in clinical trials, while others are raising controversy. </p>
@@ -39,5 +39,5 @@ If you find COVID-CDR as useful for your research, please cite our work by inclu
 - Explore the COVID-CDR variant of other popular databases (e.g. DrugComDB and FDA-approaved combination)
 
 ## Dataset
-- A set of (867 drugs)[https://github.com/VafaeeLab/COVID_CDR/blob/main/data/allCOVID_drug_collection_full_v5.csv] that are reported to treat COVID-19 patients by various sources (i.e. ClinicalTrials, DrugBank, and Wikipedia)
+- A set of [```867 drugs```](https://github.com/VafaeeLab/COVID_CDR/blob/main/data/allCOVID_drug_collection_full_v5.csv) that are reported to treat COVID-19 patients by various sources (i.e. ClinicalTrials, DrugBank, and Wikipedia)
 - A list of other datasets
